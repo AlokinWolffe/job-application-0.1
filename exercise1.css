@@ -1,0 +1,92 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.pattern {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #775144;
+    opacity: 0.1;
+    background-image: linear-gradient(30deg, #C09891 12%, transparent 12.5%, transparent 87%, #C09891 87.5%, #C09891), linear-gradient(150deg, #C09891 12%, transparent 12.5%, transparent 87%, #C09891 87.5%, #C09891), linear-gradient(30deg, #C09891 12%, transparent 12.5%, transparent 87%, #C09891 87.5%, #C09891), linear-gradient(150deg, #C09891 12%, transparent 12.5%, transparent 87%, #C09891 87.5%, #C09891), linear-gradient(60deg, #ffb97777 25%, transparent 25.5%, transparent 75%, #ffb97777 75%, #ffb97777), linear-gradient(60deg, #ffb97777 25%, transparent 25.5%, transparent 75%, #ffb97777 75%, #ffb97777);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
+.heading {
+    margin: 0;
+    padding: 10px;
+    font-size: 3.25rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    background-color: #F4DBD8;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    position: relative;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.container-text {
+    padding-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.button-container button {
+    background-color: #C09891;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+}
+
+.box {
+    background-color: #C09891;
+    padding: 0.01em 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-left: 6px solid #2A0800;
+    border-right: 6px solid #2A0800;
+    min-height: 200px;
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-top h3 {
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-flow: column;
+    }
+
+    .info-top {
+        flex-flow: column-reverse;
+    }
+}
