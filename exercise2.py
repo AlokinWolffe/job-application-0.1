@@ -87,8 +87,8 @@ def suggest_plan(location: str):
 
     #sorted volunteers are assigned to days from lowest to highest (amount of days they work)
     #days without volunteers are assigned first
-    #once all days are filled, following volunteers then take over 1 shift of lower sorted volunteers that have more than 1
-    #this optimises the number of people that will work only 1 shift i possible
+    #once all days are filled, following volunteers then iterate through the week and take over 1 shift of a lower sorted volunteer that has more than 1 shift
+    #this optimises the number of people that will work only 1 shift if possible
 
     return
 
